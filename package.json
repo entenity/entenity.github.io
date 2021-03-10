@@ -1,0 +1,31 @@
+{
+  "name": "entenity.vuepress.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "GH=1 yarn build && bash scripts/deploy-gh.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entenity/entenity.vuepress.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entenity/entenity.vuepress.io/issues"
+  },
+  "homepage": "https://github.com/entenity/entenity.vuepress.io#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/shared-utils": "^1.8.2",
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "vue-toasted": "^1.1.28"
+  }
+}
