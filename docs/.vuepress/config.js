@@ -59,7 +59,7 @@ module.exports = {
 }
 
 function getArchiveSidebar() {
-    const files = fs.readdirSync(path.resolve(__dirname, '../archive'))
+    const files = fs.readdirSync(path.resolve(__dirname, '../archive/post'))
     const fileJson = {}
     files.reduce((pre, current) => {
         const fileArr = current.split('-')
@@ -69,13 +69,13 @@ function getArchiveSidebar() {
                 title: yearAndMonth,
                 collapsable: false,
                 children: [
-                    [current, fileArr[4].slice(0, -3)]
+                    ['post/' + current, fileArr[4].slice(0, -3)]
                 ]
             }
             if(!pre[yearAndMonth]) {
                 pre[yearAndMonth] = obj
             } else {
-                pre[yearAndMonth].children.push([current, fileArr[4].slice(0, -3)])
+                pre[yearAndMonth].children.push(['post/' + current, fileArr[4].slice(0, -3)])
             }
             return pre
         }
@@ -84,7 +84,7 @@ function getArchiveSidebar() {
 }
 
 function getCategorySidebar() {
-    const files = fs.readdirSync(path.resolve(__dirname, '../archive'))
+    const files = fs.readdirSync(path.resolve(__dirname, '../category/post'))
     const fileJson = {}
     files.reduce((pre, current) => {
         const fileArr = current.split('-')
@@ -93,13 +93,13 @@ function getCategorySidebar() {
                 title: fileArr[3],
                 collapsable: false,
                 children: [
-                    [current, fileArr[4].slice(0, -3)]
+                    ['post/' + current, fileArr[4].slice(0, -3)]
                 ]
             }
             if(!pre[fileArr[3]]) {
                 pre[fileArr[3]] = obj
             } else {
-                pre[fileArr[3]].children.push([current, fileArr[4].slice(0, -3)])
+                pre[fileArr[3]].children.push(['post/' + current, fileArr[4].slice(0, -3)])
             }
             return pre
         }
