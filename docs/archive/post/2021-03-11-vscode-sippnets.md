@@ -18,7 +18,7 @@
 
 根据官方文档搭建环境，[官方地址](https://code.visualstudio.com/api/get-started/your-first-extension)
 
-```bat
+```bash
 
 npm install -g yo generator-code
 
@@ -28,7 +28,7 @@ npm install -g yo generator-code
 
 **初始化项目**
 
-```bat
+```bash
 
 yo code
 
@@ -264,7 +264,7 @@ snippets: [
 
 **1、安装vsce**
 
-```bat
+```bash
 
 npm install -g vsce
 
@@ -292,7 +292,7 @@ npm install -g vsce
 
 **4、登录publisher，输入你创建应用的token**
 
-```bat
+```bash
 
 vsce login [你创建的发布者名称]
 
