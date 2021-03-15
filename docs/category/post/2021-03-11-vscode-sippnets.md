@@ -8,27 +8,27 @@
 
 **请看下面动态图**
 
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/two.gif)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/two.gif)
 
 **当然也可以用本地创建好的 Json 文件**
 
-![用户片段](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/one.jpg)
+![用户片段](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/one.jpg)
 
 ## 搭建环境
 
 根据官方文档搭建环境，[官方地址](https://code.visualstudio.com/api/get-started/your-first-extension)
 
-```bat
+```bash
 
 npm install -g yo generator-code
 
 ```
 
-![查看yo版本](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/three.jpg)
+![查看yo版本](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/three.jpg)
 
 **初始化项目**
 
-```bat
+```bash
 
 yo code
 
@@ -36,11 +36,11 @@ yo code
 
 选择插件类型，其实这里可以随便选，脚手架都是从仓库拉的模板而已，这里我们选择 TypeScript
 
-![初始化项目](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/four.jpg)
+![初始化项目](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/four.jpg)
 
 选择完成后会出现脚手架使用[inquirer](https://www.npmjs.com/package/inquirer)包普遍的询问过程，反正回车回车就是了，最后会主动的把所需要的包全部安装好，结构目录不做分析了
 
-![初始化项目](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/five.jpg)
+![初始化项目](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/five.jpg)
 
 ## package.json
 
@@ -264,7 +264,7 @@ snippets: [
 
 **1、安装vsce**
 
-```bat
+```bash
 
 npm install -g vsce
 
@@ -274,32 +274,32 @@ npm install -g vsce
 
 3、[用刚刚创建的账户登录Microsoft云平台管理](https://dev.azure.com/)，然后安装下面步骤拿到token
 
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/6.jpg)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/6.jpg)
 
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/7.jpg)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/7.jpg)
 
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/8.jpg)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/8.jpg)
 
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/9.jpg)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/9.jpg)
 
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/10.jpg)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/10.jpg)
 
 **3、创建插件publisher**
 
 这里的Name必须和刚刚创建Token的Name一致
 
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/11.jpg)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/11.jpg)
 
 **4、登录publisher，输入你创建应用的token**
 
-```bat
+```bash
 
 vsce login [你创建的发布者名称]
 
 ```
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/12.jpg)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/12.jpg)
 
 
 完成以上步骤你就可以插件市场你所发布的插件中看到自己发布的插件了
 
-![示例](https://raw.githubusercontent.com/entenity/entenity-pictures/master/vscode/13.jpg)
+![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/13.jpg)
