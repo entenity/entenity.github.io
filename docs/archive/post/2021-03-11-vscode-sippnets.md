@@ -8,7 +8,7 @@
 
 **请看下面动态图**
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/two.gif)
+<img :src="$withBase('/images/two.gif')" alt="mixureSecure">
 
 **当然也可以用本地创建好的 Json 文件**
 
