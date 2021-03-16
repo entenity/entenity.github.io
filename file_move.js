@@ -13,6 +13,7 @@ const ignoreFiles = [
   "yarn-error.log",
   "yarn.lock",
   "node_modules",
+  "release.sh",
   ".git"
 ];
 
