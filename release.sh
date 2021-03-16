@@ -19,3 +19,5 @@ git push
 git checkout master
 
 git push
+
+exit
