@@ -14,7 +14,9 @@ git add .
 
 git commit -m 'update'
 
-git push
+git pull gitee deploy
+
+git push github deploy
 
 git checkout master
 
