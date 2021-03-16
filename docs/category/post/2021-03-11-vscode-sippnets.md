@@ -8,11 +8,11 @@
 
 **请看下面动态图**
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/two.gif)
+<img :src="$withBase('/images/vscode/two.gif')" alt="mixureSecure">
 
 **当然也可以用本地创建好的 Json 文件**
 
-![用户片段](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/one.jpg)
+<img :src="$withBase('/images/vscode/one.jpg')" alt="mixureSecure">
 
 ## 搭建环境
 
@@ -24,7 +24,7 @@ npm install -g yo generator-code
 
 ```
 
-![查看yo版本](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/three.jpg)
+<img :src="$withBase('/images/vscode/three.jpg')" alt="mixureSecure">
 
 **初始化项目**
 
@@ -36,11 +36,11 @@ yo code
 
 选择插件类型，其实这里可以随便选，脚手架都是从仓库拉的模板而已，这里我们选择 TypeScript
 
-![初始化项目](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/four.jpg)
+<img :src="$withBase('/images/vscode/four.jpg')" alt="mixureSecure">
 
 选择完成后会出现脚手架使用[inquirer](https://www.npmjs.com/package/inquirer)包普遍的询问过程，反正回车回车就是了，最后会主动的把所需要的包全部安装好，结构目录不做分析了
 
-![初始化项目](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/five.jpg)
+<img :src="$withBase('/images/vscode/five.jpg')" alt="mixureSecure">
 
 ## package.json
 
@@ -274,21 +274,21 @@ npm install -g vsce
 
 3、[用刚刚创建的账户登录Microsoft云平台管理](https://dev.azure.com/)，然后安装下面步骤拿到token
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/6.jpg)
+<img :src="$withBase('/images/vscode/6.jpg')" alt="mixureSecure">
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/7.jpg)
+<img :src="$withBase('/images/vscode/7.jpg')" alt="mixureSecure">
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/8.jpg)
+<img :src="$withBase('/images/vscode/8.jpg')" alt="mixureSecure">
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/9.jpg)
+<img :src="$withBase('/images/vscode/9.jpg')" alt="mixureSecure">
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/10.jpg)
+<img :src="$withBase('/images/vscode/10.jpg')" alt="mixureSecure">
 
 **3、创建插件publisher**
 
 这里的Name必须和刚刚创建Token的Name一致
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/11.jpg)
+<img :src="$withBase('/images/vscode/11.jpg')" alt="mixureSecure">
 
 **4、登录publisher，输入你创建应用的token**
 
@@ -297,9 +297,9 @@ npm install -g vsce
 vsce login [你创建的发布者名称]
 
 ```
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/12.jpg)
+<img :src="$withBase('/images/vscode/12.jpg')" alt="mixureSecure">
 
 
 完成以上步骤你就可以插件市场你所发布的插件中看到自己发布的插件了
 
-![示例](https://gitee.com/entenity/entenity-pictures/raw/master/vscode/13.jpg)
+<img :src="$withBase('/images/vscode/13.jpg')" alt="mixureSecure">
