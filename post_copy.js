@@ -1,27 +1,11 @@
 const path = require("path");
 const fs = require("fs");
 
-const root = path.resolve(__dirname);
-const currentPath = path.resolve(__dirname, "./docs/.vuepress/dist");
-const docsPath = path.resolve(__dirname, "./docs");
+const target_folder = path.resolve(__dirname, './docs/category');
+const source_folder = path.resolve(__dirname, "./docs/archive");
 const ignoreFiles = [
-  "docs",
-  ".gitignore",
-  "file_move.js",
-  "deploy-gh.sh",
-  "package.json",
-  "yarn-error.log",
-  "yarn.lock",
-  "node_modules",
-<<<<<<< HEAD
-  ".git",
-  "release.sh"
-=======
-  "release.sh",
-  ".git"
->>>>>>> 3742cb5aed09463e0644cbe755f34d259ba55823
+  "README.md",
 ];
-
 
 function deleteFolder(path) {
   let files = [];
@@ -40,24 +24,9 @@ function deleteFolder(path) {
               fs.unlinkSync(curPath);
           }
       });
-      if(path !== root) {
+      if(path !== target_folder) {
         fs.rmdirSync(path);
       }
-  }
-}
-
-function deleteDocs(path) {
-  let files = [];
-  if( fs.existsSync(path) ) {
-    files = fs.readdirSync(path);
-    files.forEach((file) => {
-        let curPath = path + "/" + file;
-        if(fs.statSync(curPath).isDirectory()) {
-            deleteFolder(curPath);
-        } else {
-            fs.unlinkSync(curPath);
-        }
-    });
   }
 }
 
@@ -89,5 +58,5 @@ function startMove(source, target, callback) {
     }
 };
 
-deleteFolder(root);
-startMove(currentPath, root, copy);
+deleteFolder(target_folder);
+startMove(source_folder, target_folder, copy);
