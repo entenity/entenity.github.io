@@ -60,3 +60,5 @@ function startMove(source, target, callback) {
 
 deleteFolder(target_folder);
 startMove(source_folder, target_folder, copy);
+
+console.log('copy over')
